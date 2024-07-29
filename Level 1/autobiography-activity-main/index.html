@@ -40,6 +40,11 @@
     </style>
 </head>
 <body>
+    <button class="backtopbutton" onclick="scrollToTop()">
+        <svg class="svgIcon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 5v14m-7-7l7-7 7 7" />
+        </svg>
+    </button>
     <!-- Header Section -->
     <header>
         <div class="toggle-container">
@@ -331,6 +336,7 @@
         </button>
     </div>
 </div>
+  
 
 
 
@@ -360,6 +366,13 @@
 
     <!-- JavaScript -->
     <script>
+        function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
         // Array of audio tracks
         const tracks = ['boses.mp3', 'track2.mp3', 'track3.mp3'];
         let currentTrackIndex = 0;
