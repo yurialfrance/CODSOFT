@@ -1,0 +1,123 @@
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .audio-player {
+  background-color: #444; /* Darker background for audio player */
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+
+body.dark-mode .audio-player button {
+  color: #fff;
+  background-color: #666; /* Dark background for buttons */
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .audio-player button:hover {
+  background-color: #777; /* Slightly lighter background on hover */
+}
+
+body.dark-mode header {
+  background-color: #222; /* Adjust header background color for dark mode */
+}
+
+body.dark-mode header .toggle-container label i {
+  color: #fff;
+  background-color: #333;
+}
+
+body.dark-mode header .toggle-container label i:hover {
+  cursor: pointer;
+  background-color: #444;
+  color: #fff;
+}
+
+/* Toggle Switch Styles */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-container label {
+  margin-right: 10px;
+}
+
+.toggle-container input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-container input[type="checkbox"] + .toggle-track {
+  background-color: #555;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 10px;
+  transition: background-color 0.3s ease;
+  width: 30px;
+  position: relative;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-track {
+  background-color: #333;
+}
+
+.toggle-container input[type="checkbox"] + .toggle-track:before {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 18px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  transition: transform 0.3s ease;
+  width: 18px;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-track:before {
+  transform: translateX(20px);
+}
+
+/* Profile Section Dark Mode */
+body.dark-mode .profile-container {
+  background-color: #444; /* Dark background for profile section */
+}
+
+body.dark-mode .profile-text {
+  color: #ddd; /* Lighter text color for better readability */
+}
+
+/* Hobby Box Dark Mode */
+body.dark-mode .hobby-box {
+  background-color: #555;
+  color: #eee; /* Lighter text color for better contrast */
+}
+
+/* Footer Dark Mode */
+body.dark-mode footer {
+  background-color: #222;
+  color: #ccc;
+}
+
+body.dark-mode footer ul.social-icons a {
+  background-color: #555;
+  color: #fff;
+}
+
+body.dark-mode footer ul.social-icons a:hover {
+  background-color: #666;
+}
+
+body.dark-mode footer ul.contact-info a {
+  color: #f4bc42;
+}
+
+body.dark-mode footer ul.contact-info a:hover {
+  color: #fff;
+}
