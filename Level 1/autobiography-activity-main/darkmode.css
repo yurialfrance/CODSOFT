@@ -87,10 +87,19 @@ body.dark-mode header .toggle-container label i:hover {
 /* Profile Section Dark Mode */
 body.dark-mode .profile-container {
   background-color: #444; /* Dark background for profile section */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for better depth in dark mode */
 }
 
-body.dark-mode .profile-text {
+body.dark-mode .profile-name {
+  color: #fff; /* Light text color for the name */
+}
+
+body.dark-mode .profile-details {
   color: #ddd; /* Lighter text color for better readability */
+}
+
+body.dark-mode .profile-details strong {
+  color: #fff; /* Make bolded text stand out */
 }
 
 /* Hobby Box Dark Mode */
